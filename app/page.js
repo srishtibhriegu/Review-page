@@ -2,9 +2,6 @@
 import React, { useState } from 'react'; 
 import StarRating from './client-only/starRating';
 import styles from '../app/page.module.css';
-import thumbsUpIcon from './client-only/'
-import thumbsDownIcon from'./client-only/';
-
 
 const ReviewPage = () => {
   const [thumbsUpClicked, setThumbsUpClicked] = useState(false);
@@ -32,12 +29,12 @@ const ReviewPage = () => {
       </div>
       <div className={styles.buttonsContainer}>
       <button className={styles.button} onClick={handleThumbsDownClick} style={{ backgroundColor: thumbsDownClicked ? 'green' : 'transparent' }}>
-          <img src={thumbsDownIcon} alt="Thumbs Down" className="thumbs-down-icon" />
+          <img src="/thumbsdown.png" alt="Thumbs Down" className={styles.img}  style={{ width: '50px', height: '50px' }}/>
           <span className={styles.buttonText}>No</span>
         </button>
         <button className={styles.button} onClick={handleThumbsUpClick} style={{ backgroundColor: thumbsUpClicked ? 'green' : 'transparent' }}>
           <span className={styles.buttonText}>Yes</span>
-          <img src={thumbsUpIcon} alt="Thumbs Up" className="thumbs-up-icon" />
+          <img src="/thumbsup.png" alt="Thumbs Up" className={styles.img} style={{ width: '50px', height: '50px' }} />
         </button>
       </div>
     </div>
