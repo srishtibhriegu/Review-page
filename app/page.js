@@ -2,7 +2,8 @@
 import React, { useState } from 'react'; 
 import StarRating from './client-only/starRating';
 import styles from '../app/page.module.css';
-import thumbsUpIcon from ''
+import thumbsUpIcon from './client-only/'
+import thumbsDownIcon from'./client-only/';
 
 
 const ReviewPage = () => {
